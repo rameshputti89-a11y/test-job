@@ -4,5 +4,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: executing steps:
+      - name: executing steps
         run: echo "test"
