@@ -1,7 +1,8 @@
 name: first-job
 on: workflow_dispatch
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: executing steps:
-      run: echo "test"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing steps:
+        run: echo "test"
