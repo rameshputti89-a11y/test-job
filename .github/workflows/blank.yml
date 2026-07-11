@@ -1,13 +1,17 @@
-name: test
+name: Cross Platform Test
+
 on: workflow_dispatch
+
 jobs:
   test:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - name: testing
-        run: echo "welcome"
-      - name: check out the code
-        uses: actions/checkout@v7
-      - name: checking the list
-        run: ls
-        
+      - uses: actions/checkout@v4
+
+      - name: Show OS
+        run: echo "Running on ${{ matrix.os }}"
