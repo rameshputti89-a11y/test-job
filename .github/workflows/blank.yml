@@ -10,4 +10,8 @@ jobs:
         uses: actions/checkout@v7
       - name: listing the files
         run: ls
+  testing:
+    steps:
+      - name: running second job
+        run: echo "second job running"
         
