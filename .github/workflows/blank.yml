@@ -1,22 +1,8 @@
-name: multiple jobs
+name: GIT job testing
 on: workflow_dispatch
 jobs:
-  first-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: first job
-        run: echo "testing"
-      - name: checkout the git
-        uses: actions/checkout@v7
-      - name: list the dir
-        run: ls
-  second-job:
-    needs: first-job
-    runs-on: ubuntu-latest
-    steps:
-      - name: second job running
-        run: echo "second job running"
-      - name: checkout the job
-        uses: actions/checkout@v7
-      - name: list the dir
-        run: ls
+      - name: testing
+        run: echo "welcome"
