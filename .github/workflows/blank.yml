@@ -11,6 +11,7 @@ jobs:
       - name: listing the files
         run: ls
   testing:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: running second job
