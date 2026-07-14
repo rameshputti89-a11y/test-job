@@ -8,4 +8,6 @@ jobs:
         run: echo "welcome"
       - name: checkout the code
         uses: actions/checkout@v7
+      - name: listing the files
+        run: ls
         
