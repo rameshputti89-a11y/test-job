@@ -11,6 +11,7 @@ jobs:
       - name: listing the files
         run: ls
   testing:
+    runs-on: ubuntu-latest
     steps:
       - name: running second job
         run: echo "second job running"
