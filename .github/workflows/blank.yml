@@ -7,5 +7,5 @@ jobs:
       - name: testing
         run: echo "welcome"
       - name: checkout the code
-        uses: actions\checkout@v7
+        uses: actions/checkout@v7
         
